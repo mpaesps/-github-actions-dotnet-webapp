@@ -1,11 +1,10 @@
-name: CI Lint Workflow
+name: dotnet-build
 
 on:
   workflow_dispatch: {}
-  push: {}               
+  push: {}
   schedule:
-    - cron: '0 * * * *'  
-   
+    - cron: '0 * * * *'
 
 jobs:
   lint:
