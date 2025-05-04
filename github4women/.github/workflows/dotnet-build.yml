@@ -1,0 +1,20 @@
+name: CI Lint Workflow
+
+on:
+  push: {}               
+  schedule:
+    - cron: '0 * * * *'   
+
+jobs:
+  lint:
+    name: Lint Code
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Say Hello
+        run: echo "Hello!"
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '6.x'
