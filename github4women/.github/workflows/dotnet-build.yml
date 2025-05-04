@@ -1,9 +1,11 @@
 name: CI Lint Workflow
 
 on:
+  workflow_dispatch: {}
   push: {}               
   schedule:
-    - cron: '0 * * * *'   
+    - cron: '0 * * * *'  
+   
 
 jobs:
   lint:
